@@ -4,6 +4,7 @@ from collections import Counter
 import emoji
 from memory_profiler import profile
 import boto3
+import os
 
 def q2_memory(file_path: str) -> List[Tuple[str, int]]:
     emoji_counts = Counter()
@@ -12,7 +13,7 @@ def q2_memory(file_path: str) -> List[Tuple[str, int]]:
     s3 = boto3.client('s3')
 
     # Ruta al archivo en el bucket de S3
-    bucket_name = 'dvalenzuela-latam-challenge'
+    bucket_name = os.environ['AWS_BUCKET_NAME']
 
     # Se obtiene el archivo de S3
     obj = s3.get_object(Bucket=bucket_name, Key=file_path)
