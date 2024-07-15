@@ -27,6 +27,7 @@ Para comenzar, asegúrese de contar con lo siguiente:
    ```bash
    git clone https://github.com/davalen1/latam-challenge.git
    cd repo
+   ```
 
 2. **Configurar AWS S3**
 
@@ -38,7 +39,7 @@ Copie su AWS Key ID y AWS Secret Key en el archivo config.json incluido en el re
     "aws_secret_access_key": "SU_AWS_SECRET_KEY",
     "bucket_name": "SU_BUCKET_NAME"
    }
-   
+   ```
 
 ## Ejecución
 
