@@ -24,22 +24,22 @@ Para comenzar, asegúrese de contar con lo siguiente:
 
 1. **Clonar el repositorio**
 
-   ```bash
-   git clone https://github.com/davalen1/latam-challenge.git
-   cd repo
-   ```
+```bash
+git clone https://github.com/davalen1/latam-challenge.git
+cd repo
+```
 
 2. **Configurar AWS S3**
 
 Copie su AWS Key ID y AWS Secret Key en el archivo config.json incluido en el repositorio. El archivo config.json debe tener el siguiente formato:
 
-   ```json
-   {
-    "aws_access_key_id": "SU_AWS_KEY_ID",
-    "aws_secret_access_key": "SU_AWS_SECRET_KEY",
-    "bucket_name": "SU_BUCKET_NAME"
-   }
-   ```
+```json
+{
+"aws_access_key_id": "SU_AWS_KEY_ID",
+"aws_secret_access_key": "SU_AWS_SECRET_KEY",
+"bucket_name": "SU_BUCKET_NAME"
+}
+```
 
 ## Ejecución
 
